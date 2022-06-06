@@ -1,5 +1,5 @@
 #!/usr/bin/env perl
-use v5.14;
+use v5.20;
 use strict;
 use warnings;
 
@@ -69,4 +69,3 @@ $result .= "\b\b等方面都颇有成就，你" . &random_praise . "，" . &rand
           "。希望你能再接再厉，在即将到来的新学期取得更大的成就！";
 
 print $result;
-print ((length $result) / 2);
