@@ -44,6 +44,9 @@ sub ask {
 }
 
 
+my $name = ask("Name?");
+my $id = ask("Student ID?");
+
 my $sex = "男";
 if (ask("Sex? (M/F)") eq "F") {
   $sex = "女";
@@ -56,7 +59,7 @@ while (($achieve = ask("Achievement? (Enter to end input)")) ne "") {
 }
 
 my $result =
-   "你是一个" . &random_praise . "的${sex}生，" . &random_praise . "的你，在";
+   "$name $id 你是一个" . &random_praise . "的${sex}生，" . &random_praise . "的你，在";
 
 foreach my $s (@achieve) { $result .= $s . "，"; }
 
